@@ -1,0 +1,106 @@
+/* src/styles/Features.css */
+
+.features {
+  background: #f1f5f9; /* gris muy suave */
+  padding: 4rem 2rem;
+}
+
+.features-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.features-header h2 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 2.5rem;
+  color: #1f2340;
+  margin-bottom: 0.5rem;
+}
+
+.features-header p {
+  font-family: 'Inter', sans-serif;
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+/* Grid */
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Tarjeta */
+.feature-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  position: relative;
+}
+
+/* Icono flotando */
+.feature-icon-wrapper {
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #D2B4DE;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Título y lista */
+.feature-card h3 {
+  margin-top: 2.5rem; /* espacio para el icono */
+  margin-bottom: 1rem;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 1.25rem;
+  color: #1f2340;
+}
+
+.feature-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-card li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.feature-card li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 0.6em;
+  height: 0.6em;
+  background: #10b981; /* verde para check, cámbialo si prefieres otro */
+  border-radius: 50%;
+}
+
+/* Hover */
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+

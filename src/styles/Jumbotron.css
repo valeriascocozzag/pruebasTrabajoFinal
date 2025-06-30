@@ -1,0 +1,40 @@
+
+.jumbotron-section {
+  background-color: #ad7ac2;
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+
+.jumbotron-title {
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.pet-list {
+  padding-left: 1;
+}
+
+.btn-add {
+  width: 60px;
+  height: 60px;
+  font-size: 1.5rem;
+  line-height: 1;
+  border: 2px solid #fff;
+}
+
+.pet-avatar {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+.pet-name {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 576px) {
+  .pet-list { gap: 1rem; }
+}
